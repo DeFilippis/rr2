@@ -47,6 +47,9 @@ ggplot(injSum[1:5, ], aes(EVTYPE, INJURIES)) + geom_bar(stat = "identity") +
     ylab("Injuries") + xlab("Event Type") + ggtitle("Top Five Types of Events Causing Injuries Across the U.S")
 ```
 
+![Plot1](plot1.png)
+![Plot2](plot2.png)
+
 2. Across the United States, which types of events have the greatest economic consequences?
 
 ```{r}
@@ -71,3 +74,8 @@ Graph data using GGplot
 ggplot(totalCost[1:5, ], aes(evtype, dmg)) + geom_bar(stat = "identity") + ylab("Economic Damages (million dollars)") + 
     xlab("Event Type") + ggtitle("Top Five Types of Events Causing Economic Damages Across the U.S")
 ```
+
+![Plot3](plot3.png)
+
+
+Floods cause the most economic damage in the United States.
